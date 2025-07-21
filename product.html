@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <title>Product</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 15px;
+        }
+    
+        .gallery img {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+          transition: transform 0.3s ease;
+        }
+    
+        .gallery img:hover {
+          transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
     <h1>Our Products</h1>
@@ -14,6 +34,21 @@
         <a href="about.html">About Us</a> |
         <a href="contact.html">Contact Us</a>
     </nav>
-    <p>This is the Product Page.</p>
+    <h1 class="title">Flask Water Container Gallery</h1>
+
+      <div class="gallery">
+        <div class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Flask+1" alt="Flask 1"></div>
+        <div class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Flask+2" alt="Flask 2"></div>
+        <div class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Flask+3" alt="Flask 3"></div>
+        <div class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Flask+4" alt="Flask 4"></div>
+        <div class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Flask+5" alt="Flask 5"></div>
+        <div class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Flask+6" alt="Flask 6"></div>
+        <div class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Flask+7" alt="Flask 7"></div>
+        <div class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Flask+8" alt="Flask 8"></div>
+        <div class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Flask+9" alt="Flask 9"></div>
+        <div class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Flask+10" alt="Flask 10"></div>
+        <div class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Flask+11" alt="Flask 11"></div>
+        <div class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Flask+12" alt="Flask 12"></div>
+      </div>
 </body>
 </html>
